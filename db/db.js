@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = process.env.MONGOURI;
+const mongoURI = process.env.MONGOURI || "mongodb://localhost/Auth_App";
 
 const mongoDB = async ()=> {
     mongoose.connect(mongoURI, async (err, result)=> {
