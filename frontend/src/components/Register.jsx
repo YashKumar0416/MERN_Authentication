@@ -50,7 +50,7 @@ const Register = () => {
     <>
     <div className="main_container">
         <h2 className='mb-3'>Register Here</h2>
-        <div className="container w-25 border border-info p-3 rounded-2 bg-light fs-5">
+        <div className="border border-info p-3 rounded-2 bg-light fs-5">
             <Form method='POST' onSubmit={saveData}>
             <Form.Group className="mb-2" controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
