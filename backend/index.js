@@ -15,6 +15,9 @@ const PORT = process.env.PORT || 8000;
 //     next();
 // })
 
+app.get('/home', (req, res)=> {
+res.send("Welcome Home")})
+
 //STATIC FILES
 // app.use(express.static(path.join(__dirname, '/client/build')))
 // app.get("*", function(req, res) {
