@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoDB = require('./db/db');
@@ -16,10 +16,10 @@ const PORT = process.env.PORT || 8000;
 // })
 
 //STATIC FILES
-app.use(express.static(path.join(__dirname, '/client/build')))
-app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, '/client/build/index.html'))
-});
+// app.use(express.static(path.join(__dirname, '/client/build')))
+// app.get("*", function(req, res) {
+//     res.sendFile(path.join(__dirname, '/client/build/index.html'))
+// });
 
 app.use(cors());
 app.use(express.json());
