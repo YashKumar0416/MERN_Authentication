@@ -61,9 +61,8 @@ const Login = () => {
   return (
     <>
         <div className="main_container">
-            <div className="container text-center w-100">
                 <h2 className='m-4'>Login Here</h2>
-                <div className="container w-25 border border-info p-3 rounded-2 bg-light fs-5 h-50">
+                <div className="border border-info p-3 rounded-2 bg-light fs-5 h-50">
                 <Form method='POST'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
@@ -83,7 +82,6 @@ const Login = () => {
                     </Form.Group>
                     </Form>
                 </div>
-            </div>
         </div>
     </>
   )
